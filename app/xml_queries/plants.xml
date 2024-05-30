@@ -1,0 +1,16 @@
+ <fetch>
+    <entity name="crmk_plant">
+      <attribute name="crmk_projectshortname" />
+      <attribute name="crmk_plantid" />
+      <attribute name="crmk_primaryname" />
+      <filter>
+        <condition attribute="crmk_plantid" operator="eq" value="f5073217-2a1e-ed11-b83d-0022489c2e43" />
+      </filter>
+      <link-entity name="crmk_plant_landobject" from="crmk_landobjectid" to="crmk_plantid" link-type="outer" alias="Relation" intersect="true" />
+      <link-entity name="crmk_plant_landobject" from="crmk_plantid" to="crmk_plantid" intersect="true">
+        <link-entity name="crmk_landobject" from="crmk_landobjectid" to="crmk_landobjectid" alias="LandObject" intersect="true">
+          <attribute name="crmk_denominationname" />
+        </link-entity>
+      </link-entity>
+    </entity>
+  </fetch>

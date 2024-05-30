@@ -1,0 +1,48 @@
+/* General page styling to improve overall aesthetics */
+body {
+    font-family: Arial, sans-serif; /* Ensures a clean, modern typeface */
+    background-color: #f4f4f4; /* Light grey background for mild contrast */
+    color: #333; /* Dark grey text for readability */
+    line-height: 1.6; /* Improves text readability */
+}
+
+/* Container styling for better centering and spacing */
+.container {
+    width: 90%;
+    max-width: 800px; /* Maximum width for large screens */
+    margin: 20px auto; /* Increased top margin and centered horizontally */
+    padding: 20px; /* Padding around content within container */
+    background-color: #fff; /* White background for the content area */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+    text-align: center;
+}
+
+/* Button styling for better visual and interactive experience */
+.btn {
+    background-color: #007BFF; /* Bootstrap primary blue */
+    color: #ffffff; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Top/bottom and left/right padding */
+    font-size: 16px;
+    cursor: pointer; /* Cursor indicates button is clickable */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn:hover, .btn:focus {
+    background-color: #0056b3; /* Darker blue on hover/focus for visual feedback */
+    outline: none; /* Removes the outline on focus to maintain clean look */
+}
+
+/* Styling for form elements for better alignment and spacing */
+form div.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+/* Styling for select elements to match the button style */
+select {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box; /* Includes padding and border in width */
+    margin-top: 5px; /* Small top margin when label is above */
+}

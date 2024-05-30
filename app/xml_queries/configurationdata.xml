@@ -1,0 +1,13 @@
+<fetch>
+    <entity name="crmk_plant">
+      <attribute name="crmk_projectshortname" />
+      <attribute name="crmk_plantid" />
+      <attribute name="crmk_primaryname" />
+      <filter>
+        <condition attribute="crmk_plantid" operator="eq" value="f5073217-2a1e-ed11-b83d-0022489c2e43" uiname="123 testilitest" uitype="crmk_plant" />
+      </filter>
+      <link-entity name="crmk_item" from="crmk_plantid" to="crmk_plantid" link-type="inner" alias="Item">
+        <attribute name="crmk_itemid" />
+      </link-entity>
+    </entity>
+  </fetch>

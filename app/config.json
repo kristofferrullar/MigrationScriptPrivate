@@ -1,0 +1,27 @@
+{
+    "tenant_id": "857b431e-fd02-447f-8fb7-32a39290abcf",
+    "client_id": "0e24dcbb-d286-4dc1-b203-5b0969749f9a",
+    "client_secret": "xGl8Q~GherFkKfg4I1EEAvO-u2qNmVopxlXoNa3z",
+    "source_base_url": "https://ox2dev.crm4.dynamics.com",
+    "target_base_url": "https://ox2dev.crm4.dynamics.com",
+    "user_mapping": {
+        "old_user_id_1": "new_generic_user_id",
+        "default": "new_generic_user_id"
+    },
+    "masking_fields": {
+        "EmployeeTable": ["SocialSecurityNumber", "PhoneNumber"]
+    },
+    "batch_config": {
+        "crmk_plant": 1,
+        "crmk_landobject": 2,
+        "crmk_item": 3,
+        "crmk_plant_landobject": 4
+    },
+    "fetchxml_files": [
+        "xml_queries/configurationdata.xml",
+        "xml_queries/plants.xml"
+    ],
+    "date_field": "last_updated",
+    "date_value": "2024-01-01",
+    "target_db_type": "dynamics365"  
+}
